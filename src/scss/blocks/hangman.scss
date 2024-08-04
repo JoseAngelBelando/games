@@ -1,0 +1,23 @@
+.title-hangman{
+    color: red;
+    font-size: 3rem;
+}
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    min-height: 100vh;
+    background-color: black;
+    color: white;   
+}
+.input{
+    border-radius: 10px;
+    height: 2rem;
+}
+.button{
+    border-radius: 10px;
+    height: 2rem;
+
+}

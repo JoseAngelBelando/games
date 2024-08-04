@@ -1,14 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- PON UN FAVICON!!! -->
-    <link rel="icon" type="image/svg+xml" href="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CAMBIA EL TITLE!!! -->
-    <title>Vite Template</title>
-  </head>
-  <body>
-    <script type="module" src="./js/index.js"></script>
-  </body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose Game</title>
+    <link rel="stylesheet" href="./scss/styles.scss">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1 class="title">Jose <span class="game">Game</span></h1>
+        </div>
+       
+
+    </div>
+    <div class="content">
+    
+        
+        <div class="game-links">
+            <a href="./games/hangman.html">Hangman</a>
+            <a href="./games/tic-tac-toe/index-tic-tac-toe.html">Tic-Tac-Toe</a>
+            <a href="./games/memori-cuples/index-memory-cuples.html">Memori Cuples</a>
+            <a href="./games/rock-paper-scissor/index.html">Rock Paper Scissor</a>
+            <a href="./games/bingo/index.html">Bingo</a>
+            <!-- frog -->
+            <div class="frog">
+                <div class="pupil left"></div>
+                <div class="pupil right"></div>
+                <div class="mouth"></div>
+                <div class="nouse left"></div>
+                <div class="nouse right"></div>
+            </div>
+            <!-- hangman -->
+            <div class="hangman">
+                <div class="post"></div>
+                <div class="beam"></div>
+                <div class="rope"></div>
+                <div class="head"></div>
+                <div class="body"></div>
+                <div class="left-arm"></div>
+                <div class="right-arm"></div>
+                <div class="left-leg"></div>
+                <div class="right-leg"></div>
+            </div>
+            <!-- tic tac toe -->
+            <div class="board">
+              <div class="cell" data-index="0">X</div>
+        <div class="cell" data-index="1">O</div>
+        <div class="cell" data-index="2">X</div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4">X</div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6">O</div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8">O</div>
+          </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p class="made">
+          "Made with * by"
+          <a class="name" href="https://github.com/JoseAngelBelando" target="_blank">José Angel</a>
+          " - "
+          <a class="repository" href="https://github.com/JoseAngelBelando/interactive-card-details-form" target="_blank">Repository</a>
+        </p>
+      </footer>
+</body>
 </html>
+
