@@ -16,8 +16,14 @@ body{
     border-radius: 10px;
     height: 2rem;
 }
-.button{
-    border-radius: 10px;
-    height: 2rem;
-
+.hangman-button{
+    font-size: 1.5em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: red;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
 }
+

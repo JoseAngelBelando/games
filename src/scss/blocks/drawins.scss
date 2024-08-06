@@ -175,7 +175,7 @@
     
 }
 // tic tac toe
-.board {
+.drawin_board {
     position: absolute;
     right: 10%;
     top: 50%;
@@ -186,7 +186,7 @@
     background-color: #333;
 }
 
-.cell {
+.drawin-cell {
     color: red;
     width: 80px;
     height: 80px;
@@ -199,8 +199,8 @@
 }
 
 
-.cell:after {
+.drawin-cell:after {
     content: '';
     display: block;
-    padding-bottom: 100%; /* Mantener las celdas cuadradas */
+    // padding-bottom: 100%; /* Mantener las celdas cuadradas */
 }

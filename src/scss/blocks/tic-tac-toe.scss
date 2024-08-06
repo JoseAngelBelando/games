@@ -1,46 +1,49 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f5;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
+// body {
+//     font-family: 'Arial', sans-serif;
+//     background-color: #f0f0f5;
+//     color: #333;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+//     margin: 0;
+// }
 
-.container {
-    text-align: center;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 400px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+// .container {
+//     text-align: center;
+//     background: #fff;
+//     border-radius: 10px;
+//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+//     padding: 20px;
+//     max-width: 400px;
+//     width: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+// }
 
-h1 {
+.tic-title {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #4caf50;
+    color: #333;
 }
 
 .board {
     display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
     gap: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
+    background-color: #333;
+    border-radius: 5px;
 }
 
 .cell {
-    width: 100px;
-    height: 100px;
-    background-color: #f9f9f9;
+    width: 80px;
+    height: 80px;
+    background-color:red;
     display: flex;
+    gap: 10px;
     justify-content: center;
     align-items: center;
     font-size: 2em;
@@ -50,7 +53,7 @@ h1 {
 }
 
 .cell:hover {
-    background-color: #e0e0e0;
+    background-color: #333;
 }
 
 .message {
@@ -58,17 +61,17 @@ h1 {
     margin-bottom: 20px;
 }
 
-.btn {
+.tic-btn {
     font-size: 1.5em;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background: #4caf50;
+    background: red;
     color: #fff;
     cursor: pointer;
     transition: background 0.3s;
 }
 
-.btn:hover {
-    background: #388e3c;
+.tic-btn:hover {
+    background: darkred;
 }
