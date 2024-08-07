@@ -36,7 +36,7 @@ a {
   --spock-shadow: #156d88;
 }
 
-body {
+.rps-body {
   max-width: 800px;
   height: 100vh;
   margin: 0 auto;
@@ -66,7 +66,7 @@ body {
   text-align: center;
 }
 
-.header {
+.rps-header {
   display: flex;
   align-items: center;
   justify-content: space-between;

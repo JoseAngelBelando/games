@@ -2,12 +2,13 @@
     color: red;
     font-size: 3rem;
 }
-body{
+
+.h-container{
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
+    gap: 4rem;
     min-height: 100vh;
     background-color: black;
     color: white;   

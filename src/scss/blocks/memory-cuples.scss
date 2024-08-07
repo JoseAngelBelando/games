@@ -2,7 +2,14 @@ h1 {
     margin-top: 4rem;
     color: #fff;
 }
-
+.mc-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    min-height: 100vh;
+}
 .game-board {
     display: grid;
     grid-template-columns: repeat(4, 100px);
@@ -14,7 +21,7 @@ h1 {
 .card {
     width: 6rem;
     height: 6rem;
-    background-color: #4CAF50;
+    background-color: green;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,8 +29,12 @@ h1 {
     color: #fff;
     cursor: pointer;
     border-radius: 0.5rem;
+    transition: 0.3s ease;
 }
-
+.card:hover{
+    background-color: darkgreen;
+    transition: 0.3s ease;
+}
 .card.flip {
     background-color: #f00;
     color: #fff;
@@ -41,8 +52,13 @@ h1 {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #4CAF50;
+    background-color: green;
     color: white;
     border: none;
     border-radius: 5px;
+    transition: 0.3s ease;
+}
+.restart-button:hover{
+    background-color: darkgreen;
+    transition: 0.3s ease;
 }

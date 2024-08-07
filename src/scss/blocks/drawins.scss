@@ -1,7 +1,7 @@
 /* frog */
 .frog {
     position: relative;
-    top: 2rem;
+    top: 6rem;
     width: 200px;
     height: 200px;
     background: radial-gradient(circle, #4caf50 60%, #388e3c 100%);
@@ -85,16 +85,25 @@
     height: 300px;
 }
 
-.post {
+.h-post {
     position: absolute;
-    width: 10px;
+    width: 16px;
     height: 290px;
     background-color: white;
     left: 50px;
     bottom: 0;
 }
 
-.beam {
+.h-post::after{
+    content: '';
+    position: absolute;
+    width: 290px;
+    height: 10px ;
+    background-color: white;
+    bottom: 0;
+    right: -150px;
+}
+.h-beam {
     position: absolute;
     width: 100px;
     height: 10px;
@@ -103,7 +112,7 @@
     left: 50px;
 }
 
-.rope {
+.h-rope {
     position: absolute;
     width: 5px;
     height: 50px;
@@ -112,7 +121,7 @@
     top: 10px;
 }
 
-.head {
+.h-head {
     position: absolute;
     width: 40px;
     height: 40px;
@@ -122,7 +131,7 @@
     top: 60px;
 }
 
-.body {
+.h-body {
     position: absolute;
     width: 10px;
     height: 80px;
@@ -131,7 +140,7 @@
     top: 100px;
 }
 
-.left-arm {
+.h-left-arm {
     position: absolute;
     width: 60px;
     height: 10px;
@@ -142,7 +151,7 @@
     transform-origin: left bottom;
 }
 
-.right-arm {
+.h-right-arm {
     position: absolute;
     width: 60px;
     height: 10px;
@@ -153,7 +162,7 @@
     transform-origin: right bottom;
 }
 
-.left-leg {
+.h-left-leg {
     position: absolute;
     width: 10px;
     height: 60px;
@@ -164,7 +173,7 @@
     
 }
 
-.right-leg {
+.h-right-leg {
     position: absolute;
     width: 10px;
     height: 60px;
@@ -183,7 +192,7 @@
     grid-template-columns: repeat(3, 80px);
     grid-template-rows: repeat(3, 80px);
     gap: 10px;
-    background-color: #333;
+    rotate: -20deg;
 }
 
 .drawin-cell {
@@ -196,11 +205,7 @@
     align-items: center;
     font-size: 2em;
     font-weight: bold;
+    border-radius: 10px;
 }
 
 
-.drawin-cell:after {
-    content: '';
-    display: block;
-    // padding-bottom: 100%; /* Mantener las celdas cuadradas */
-}
