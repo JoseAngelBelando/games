@@ -13,9 +13,10 @@
     background-color: black;
     color: white;   
 }
-.input{
+.h-input{
     border-radius: 10px;
     height: 2rem;
+    text-align: center;
 }
 .hangman-button{
     font-size: 1.5em;
@@ -25,6 +26,5 @@
     background: red;
     color: #fff;
     cursor: pointer;
-    transition: background 0.3s;
 }
 
